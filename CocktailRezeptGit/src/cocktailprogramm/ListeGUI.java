@@ -7,7 +7,7 @@ import  java.util.*;
 import 	java.util.logging.Level;
 import	java.util.logging.Logger;
 import	javax.swing.*;
-
+import  java.awt.event.ActionListener;
 
 public class ListeGUI extends javax.swing.JFrame implements Serializable {
 
@@ -117,7 +117,7 @@ public class ListeGUI extends javax.swing.JFrame implements Serializable {
 			catch (Exception ex) {
 				Logger.getLogger(RezeptGUI.class.getName()).log(Level.SEVERE,null,ex);
 			}
-			initKomponenten();
+			initComponents();
 			showList();
 			toggleEnabled();
 			select(0);
