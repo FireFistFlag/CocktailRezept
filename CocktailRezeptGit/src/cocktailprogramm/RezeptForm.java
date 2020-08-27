@@ -7,15 +7,15 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class RezeptForm extends javax.swing.JFrame implements Serializable{
-	// Globale variablen in der Klasse
+// Globale variablen in der Klasse
 	DefaultListModel modell= new DefaultListModel();
 	Rezept rezept;
 	RezeptListe rezeptListe;
 	RezeptGUI gui;
 	
 	public RezeptForm(String name, ArrayList<Zutaten> zutatIn, RezeptListe rezeptListeIn, RezeptGUI rezeptGUIIn) {
-		initComponents();			//GUI	
-		rezeptListe=rezeptListeIn; 		//rezept erstellen
+		initComponents();				//GUI	
+		rezeptListe=rezeptListeIn; 		//Rezept erstellen
 		gui=rezeptGUIIn;
 		titleLabel.setText(name);
 		rezept= new Rezept(name, zutatIn);
@@ -103,7 +103,7 @@ public class RezeptForm extends javax.swing.JFrame implements Serializable{
 					String m = rezeptListe.getAlleZutaten().get(a).getMengeneinheit();
 					
 					if (m.equals("")){
-						m= "empty";
+						m= "leer";
 					}
 						showError("Die Mengeneinheit wurde davor schon mit" +m+"definiert");
 						return;

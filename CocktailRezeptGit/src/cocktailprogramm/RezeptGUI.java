@@ -302,7 +302,7 @@ public class RezeptGUI extends JFrame implements Serializable
 	}
 	JOptionPane.showMessageDialog(
 			new JFrame(), message, 
-			"Summary of " + rec.getName(),
+			"Zusammenfassung von " + rec.getName(),
 			JOptionPane.INFORMATION_MESSAGE);
 	}
 	}
